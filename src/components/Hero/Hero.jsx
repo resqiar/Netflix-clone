@@ -14,7 +14,7 @@ const Hero = () => {
         
         const fetchAPI = async () => {
             // FETCH MOVIE FROM API
-            const request = await axios.get(requests.netflixOriginals)
+            const request = await axios.get(requests.trending)
 
             // PICK RANDOM TO DISPLAY
             setMovie(
@@ -31,16 +31,17 @@ const Hero = () => {
     }, [])
 
     console.log(movie);
+
     return (
         <div className="hero" style={
             {
-                backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`
+                backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`
             }
         }>
             <div className="hero__effect"></div>
 
             <div className="hero__content">
-                <h1 className="hero-title">{movie?.name}</h1>
+                <h1 className="hero-title">{movie?.original_name || movie?.title }</h1>
                 <div className="hero__button">
                     <button className="hero-button">
                         <PlayArrowIcon/> 
