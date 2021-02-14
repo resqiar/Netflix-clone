@@ -1,0 +1,132 @@
+.hero__unauth {
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+.hero__unauthHeader {
+  display: flex;
+  padding: 7px 48px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  z-index: 9;
+}
+
+.hero__unauthHeader img {
+  width: 130px;
+}
+
+.hero-unauth-button {
+  background: red;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero__unauthEffect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 5%,
+    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 0.3309698879551821) 50%,
+    rgba(0, 0, 0, 0.6) 80%,
+    rgba(0, 0, 0, 0.8) 95%
+  );
+}
+
+.hero__unauthContent {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+}
+
+.hero__unauthContent h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 50px;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero__unauthContent h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 50px;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.get-started .MuiSvgIcon-root {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.email-form {
+    display: flex;
+}
+
+.email-form input{
+    width: 380px;
+    outline: none;
+    font-size: 14px;
+    padding: 18px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.email-form button{
+    cursor: pointer;
+    width: 200px;
+    background: #cf0812;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: white;
+    outline: none;
+    font-size: 24px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-form button:hover {
+    background-color: #fc1520;
+}
+

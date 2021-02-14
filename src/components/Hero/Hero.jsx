@@ -14,7 +14,7 @@ const Hero = () => {
         
         const fetchAPI = async () => {
             // FETCH MOVIE FROM API
-            const request = await axios.get(requests.trending)
+            const request = await axios.get(requests.nowPlaying)
 
             // PICK RANDOM TO DISPLAY
             setMovie(

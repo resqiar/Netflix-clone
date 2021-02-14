@@ -16,12 +16,14 @@ const HomeScreen = () => {
 
 
             {/* A LOT OF ROW */}
-            <Row title={"NETFLIX ORIGINAL"} url={request.netflixOriginals} isLarge/>
-            <Row title={"TRENDING NOW"} url={request.trending}/>
-            <Row title={"ROMANCE"} url={request.romanceMovies}/>
-            <Row title={"HORROR"} url={request.horrorMovies}/>
-            <Row title={"COMEDY"} url={request.comedyMovies}/>
-            <Row title={"DOCUMENTARY"} url={request.documentaries}/>
+            <Row title={"NETFLIX Original"} url={request.netflixOriginals}/>
+            <Row title={"Upcoming"} url={request.upcoming} isLarge/>
+            <Row title={"Trending Now"} url={request.trending}/>
+            <Row title={"Top Rated"} url={request.topRated} isLarge/>
+            <Row title={"Romance"} url={request.romanceMovies}/>
+            <Row title={"Horror"} url={request.horrorMovies}/>
+            <Row title={"Comedy"} url={request.comedyMovies}/>
+            <Row title={"Documentary"} url={request.documentaries}/>
         </div>
     )
 }
