@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HeroUnauth.css";
 
-
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import AuthComponent from "../AuthComponent/AuthComponent";
 
 const HeroUnauth = () => {
+  const [auth, setAuth] = useState(false);
+
   return (
     <div
       className="hero__unauth"
@@ -18,27 +20,36 @@ const HeroUnauth = () => {
           alt="netflix"
           className="unauth-logo"
         />
-        <button className="hero-unauth-button">Sign In</button>
+        <button className="hero-unauth-button" onClick={() => setAuth(true)}>
+          Sign In
+        </button>
       </div>
 
       <div className="hero__unauthEffect"></div>
-    
-      <div className="hero__unauthContent">
-          <h1>
-          Unlimited movies, TV shows, and more.
-          </h1>
-          <h3>Watch anywhere. Cancel anytime.</h3>
 
-          <div className="get-started">
-              <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      {!auth ? (
+        <>
+          <div className="hero__unauthContent">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+
+            <div className="get-started">
+              <p>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </p>
               <div className="email-form">
-                  <input type="email" name="" id="" placeholder="Email address"/>
-                  <button>
-                      Get Started <ArrowForwardIosIcon/>
-                  </button>
+                <input type="email" name="" id="" placeholder="Email address" />
+                <button onClick={() => setAuth(true)}>
+                  Get Started <ArrowForwardIosIcon />
+                </button>
               </div>
+            </div>
           </div>
-      </div>
+        </>
+      ) : (
+        <AuthComponent />
+      )}
     </div>
   );
 };
