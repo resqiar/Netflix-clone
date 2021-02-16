@@ -8,8 +8,9 @@ import { login, logout, selectUser } from "./features/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import ProfileScreen from "./screens/profile/ProfileScreen";
 
+
 function App() {
-  const user = useSelector(selectUser)
+  const user = useSelector(selectUser) // login || logout
   const dispatch = useDispatch()
   
   useEffect(() => {

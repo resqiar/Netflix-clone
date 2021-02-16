@@ -29,10 +29,10 @@ const ProfileScreen = () => {
                 <p>{user?.email}</p>
               </div>
               <div className="plan">
-                <p>Plans (Current Plan:Premium)</p>
+                <p>Plans (Current Plan:Godmode)</p>
               </div>
               <div className="renewal">
-                <p>Renewal date: 04/12/2021</p>
+                <p>Renewal date: doomsday</p>
               </div>
               <div className="subscribe-plans"></div>
               <div className="sign-out">
