@@ -1,0 +1,78 @@
+.profile {
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__container h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+.content {
+    display: flex;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-content-image img {
+    width: 70px;
+    margin: 10px 0px;
+}
+
+.container-content-subscribe {
+    margin: 10px 20px;
+}
+
+.container-content-subscribe .email {
+    background-color: #1b7f81;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px;
+    width: 400px;
+}
+
+.container-content-subscribe .plan {
+    font-weight: 400;
+    margin-top: 8px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(26, 25, 25);
+}
+
+.container-content-subscribe .renewal {
+    font-weight: 300;
+    color: rgb(194, 194, 194);
+    margin-top: 8px;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+.container-content-subscribe .subscribe-plans {
+    height: 200px;
+}
+
+.container-content-subscribe .sign-out button {
+    outline: none;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background: red;
+    margin-top: 24px;
+    padding: 8px;
+    cursor: pointer;
+}

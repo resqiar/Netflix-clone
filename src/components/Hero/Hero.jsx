@@ -30,7 +30,6 @@ const Hero = () => {
 
     }, [])
 
-    console.log(movie);
 
     return (
         <div className="hero" style={

@@ -24,7 +24,7 @@ const Row = ({ title, url, isLarge }) => {
 
       <div className="row__posters">
         {movies.map((movie) => (
-          <img src={`${BASE_URL}${isLarge ? movie?.backdrop_path : movie?.poster_path}`} alt={movie.name} className={`row__poster ${isLarge && 'row__posterLarge'}`}/>
+          <img key={movie.id} src={`${BASE_URL}${isLarge ? movie?.backdrop_path : movie?.poster_path}`} alt={movie.name} className={`row__poster ${isLarge && 'row__posterLarge'}`}/>
         ))}
       </div>
     </div>
