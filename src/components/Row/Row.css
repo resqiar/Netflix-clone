@@ -1,6 +1,6 @@
 .row {
     color: #fff;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 10px 20px 20px;
 }
 
 .row h2 {
@@ -18,10 +18,10 @@
 }
 
 .row__poster {
-    max-height: 250px;
+    max-height: 200px;
     object-fit: contain;
     width: 100%;
-    padding: 8px;
+    padding: 4px;
     cursor: pointer;
     transition: transform 0.4s;
 }

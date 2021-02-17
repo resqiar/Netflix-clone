@@ -35,7 +35,7 @@ const HomeScreen = () => {
             ></ModalVideo>
 
             {/* A LOT OF ROW */}
-            <Row title={"NETFLIX Original"} url={request.netflixOriginals} isTV/>
+            <Row title={"Netflix Original"} url={request.netflixOriginals} isTV/>
             <Row title={"Upcoming"} url={request.upcoming} isLarge />
             <Row title={"Trending Now"} url={request.trending} />
             <Row title={"Top Rated"} url={request.topRated} isLarge />
