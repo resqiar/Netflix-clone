@@ -1,0 +1,60 @@
+.payment__success {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.payment__success__container {
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    flex-direction: column;
+}
+
+.payment-success-content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 14px;
+    background: rgb(15, 15, 15);
+}
+
+.payment-success-congrats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+.payment-success-congrats .MuiSvgIcon-root {
+    font-size: 4rem;
+    margin: 8px;
+}
+
+.payment-success-text {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 8px;
+    max-width: 100%;
+    text-align: justify;
+}
+
+.payment-success-button button {
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    background: rgb(221, 25, 25);
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.payment-success-button button:hover {
+    background: rgb(255, 0, 0);
+}

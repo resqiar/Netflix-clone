@@ -6,7 +6,8 @@ import Login from "./screens/Auth/Login";
 import { auth } from "./config/Firebase";
 import { login, logout, selectUser } from "./features/userSlice";
 import { useDispatch, useSelector } from "react-redux";
-import ProfileScreen from "./screens/profile/ProfileScreen";
+import ProfileScreen from "./screens/Profile/ProfileScreen";
+import PaymentSuccess from "./screens/Payment/PaymentSuccess";
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
               </Route>
               <Route path="/profile">
                 <ProfileScreen />
+              </Route>
+              <Route path="/payment-success">
+                <PaymentSuccess />
               </Route>
             </Switch>
           )}

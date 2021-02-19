@@ -101,6 +101,11 @@
     font-weight: 400;
 }
 
+.subscribe-plans-items .subtitle{
+    font-size: 10px;
+    font-weight: 400;
+}
+
 .subscribe-plans-items button {
     outline: none;
     border: none;
@@ -112,11 +117,11 @@
     cursor: pointer;
 }
 
-.subscribed {
-    background: rgb(65, 62, 62) !important;
-    cursor: not-allowed !important;
-}
-
 .disabled {
     cursor: not-allowed;
+}
+
+.disabled > button {
+    background: rgb(65, 62, 62) !important;
+    cursor: not-allowed !important;
 }
