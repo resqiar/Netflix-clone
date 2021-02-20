@@ -44,6 +44,12 @@
     width: 400px;
 }
 
+@media only screen and (max-width: 600px) {
+    .container-content-subscribe .email {
+        width: 100%;
+    }
+}
+
 .container-content-subscribe .plan {
     font-weight: 400;
     margin-top: 8px;
@@ -88,11 +94,11 @@
     color: #1b7f81;
 }
 
-.subscribe-plans-items:hover > button {
+.subscribe-plans-items:hover>button {
     background: rgb(197, 59, 59);
 }
 
-.subscribe-plans-items:hover > p {
+.subscribe-plans-items:hover>p {
     color: rgb(175, 175, 175);
 }
 
@@ -101,7 +107,7 @@
     font-weight: 400;
 }
 
-.subscribe-plans-items .subtitle{
+.subscribe-plans-items .subtitle {
     font-size: 10px;
     font-weight: 400;
 }
@@ -121,7 +127,7 @@
     cursor: not-allowed;
 }
 
-.disabled > button {
+.disabled>button {
     background: rgb(65, 62, 62) !important;
     cursor: not-allowed !important;
 }
