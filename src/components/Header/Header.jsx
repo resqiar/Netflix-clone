@@ -29,7 +29,7 @@ const Header = ({ hideProfile }) => {
       <div className="header__logo">
         <a href={!hideProfile ? "/" : "#"}>
           <img
-            src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+            src={process.env.PUBLIC_URL + '/img/netflix.png'}
             alt="Logo"
           />
         </a>
